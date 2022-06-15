@@ -71,7 +71,7 @@ int main(int argc __attribute__((unused)), char *argv[], char *envp[])
 	free(pathstr);
 	for (index = 0; my_envp[index] != NULL; index++)
 		free(my_envp[index]);
-	for (index = 0; search_path[index] != '\0'; index++)
+	for (index = 0; search_path[index] != NULL; index++)
 		free(search_path[index]);
 	if (isatty(STDIN_FILENO))
 		write(STDOUT_FILENO, "\n", 1);

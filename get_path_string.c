@@ -1,4 +1,4 @@
-#include "sinple_shell.h"
+#include "simple_shell.h"
 
 /**
  * get_path_string - gives tokenizedstring with delimiter
