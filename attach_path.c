@@ -3,7 +3,7 @@
 /**
  * attach_path - this function attach path
  * @cmd: command
- * @search_path: pointer to pointer 
+ * @search_path: pointer to pointer
  * Return: 0 or 1
  */
 
