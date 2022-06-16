@@ -15,6 +15,12 @@
 #include <string.h>
 #include <fcntl.h>
 
+
+#define END_OF_FILE -2
+
+#define EXIT -3
+
+
 /* Global environemnt */
 
 extern char **environ;
