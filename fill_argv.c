@@ -1,6 +1,31 @@
 #include "simple_shell.h"
 
 /**
+ * remove_spaces - function removes spaces in text
+ * @text: string from which spaces will be removed
+ * Return: 1 on success
+ */
+
+char *remove_spaces(char *text)
+{
+	int i, j;
+
+	int len = _strlen(text);
+	for (i = 0; i < len; i++)
+	{
+		if (text[i] == ' ')
+		{
+			for (j = i; j < len; j++)
+			{
+				text[j] = text[j + 1];
+			}
+			len--;
+		}
+	}
+	return (text);
+}
+
+/**
  * fill_argv - function that fills the argv
  * @tmp_argv: string temp_argv
  * @my_argv: argv

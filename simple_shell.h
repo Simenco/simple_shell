@@ -15,6 +15,9 @@
 #include <string.h>
 #include <fcntl.h>
 
+typedef void (*sighnadler_t)(int);
+extern int errno;
+
 char *remove_spaces(char *text);
 void fill_argv(char *tmp_argv, char **my_argv);
 char *_strcat(char *dest, int src);
